@@ -31,7 +31,7 @@
 }
 /* Styles for the overlay */
 #overlay {
-  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
+  background-image:linear-gradient( rgba(26, 26, 26, 0.6), rgba(21, 21, 21, 0.15)), url("/img/seferTorah.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -141,7 +141,7 @@ img {
 #premierPartie {
   width: 100%;
   height: 100%;
-  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
+  background-image:linear-gradient(  rgba(26, 26, 26, 0.63), rgba(21, 21, 21, 0.15)), url("/img/seferTorah.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -509,6 +509,91 @@ span {
   width: auto; /* Ajustement automatique de la largeur */
 }
 
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 80%;
+
+
+
+}
+
+form label {
+  font-family: DMSerif, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #dab984;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+form input[type="submit"] {
+  font-size: 1rem;
+  font-family: DMSerif, sans-serif;
+  padding: 0.8rem ;
+  color: #000000;
+  border-radius: 0.2rem;
+  margin: 2.2rem;
+  border: 2px solid #dab984; /* Ajoute une bordure blanche de 2 pixels */
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+form input[type="submit"]:hover {
+  background-color: #000000;
+  font-size: 1rem;
+  font-family: DMSerif, sans-serif;
+  padding: 0.8rem ;
+  color: #dab984;
+  border-radius: 0.2rem;
+  margin: 2.2rem;
+  border: 3px solid #dab984; /* Ajoute une bordure blanche de 2 pixels */
+  transition: background-position 1s ease-in-out, color 0.3s, border-color 0.3s; /* Transition douce pour les changements de couleur et l'animation */
+  background-position: left bottom;
+
+
+}
+
+form textarea {
+  resize: vertical;
+}
+.hidden{
+  display: none;
+}
 
 
 
