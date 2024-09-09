@@ -1,0 +1,517 @@
+@font-face {
+  font-family: 'Berlin Sans FB';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/BRLNSR.woff') format('woff');
+}
+@font-face {
+  font-family: 'Brush Script MT';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/BRUSHSCI.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'torah sofer';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/TORAH.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: bold;
+  src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+/* Styles for the overlay */
+#overlay {
+  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4; /* Semi-transparent black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.5s; /* Smooth transition for opacity change */
+}
+
+#overlay.hidden {
+  opacity: 0; /* Make overlay invisible */
+  pointer-events: none; /* Disable pointer events on the hidden overlay */
+}
+
+
+
+body{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+}
+.btnLink {
+  font-family: Calibri,sans-serif;
+  background-color: #cccccc;
+  display: inline-block;
+  padding: 10px 20px; /* Ajustez les valeurs selon vos besoins */
+  border-radius: 5px; /* Ajustez selon le degré d'arrondi souhaité */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  color: #000000; /* Couleur du texte */
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
+
+}
+
+.btnLink:hover {
+  background-color: #aaaaaa; /* Couleur au survol */
+}
+
+#textPremierePartie{
+  margin-top: 12vw;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+}
+
+.txtSecondePartie{
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  font-family: DMSerif,sans-serif;
+  color: #171717;
+  font-size: 4.5vw;
+}
+.txtSecondePartieImportant{
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  font-family: "Great Vibes",sans-serif;
+  color: #171717;
+  font-size: 15vw;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+
+.image{
+border-radius: 1.5vw;
+}
+.col {
+  flex: 1;
+  padding: 2px; /* Ajoutez de l'espace entre les colonnes */
+}
+
+img {
+ width: 48vw;
+  height: 48vw;
+
+}
+
+
+
+
+#premierPartie {
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+}
+
+
+#textHebreu {
+  color: #8db6bb;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 1vw; /* Réduit l'espacement entre le texte hébreu et le logo */
+}
+
+.logo {
+  width: auto; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  align-self: center; /* Centre verticalement */
+  margin-bottom: 2vw; /* Réduit l'espacement entre le logo et le texte en bas */
+}
+
+#bzd {
+  font-size: 3vw;
+  margin-bottom: 0vw; /* Réduit l'espacement entre le texte "בס״ד" et le texte hébreu */
+}
+
+.annonce{
+  font-family: "DMSerif", sans-serif;
+  color: #e5e5e5;
+  font-size: 6vw;
+  text-align: center;
+  max-width: 85%;
+}
+.txtImportant{
+  color: #d0d0d0;
+  font-size: 18vw;
+  font-family: "Great Vibes" , sans-serif;
+}
+
+#saveTheDate {
+  padding-top: 5vw;
+  background-color: #92989b;
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
+  display: flex;
+  flex-direction: column; /* Arrange les éléments en colonne */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+
+}
+
+#decompte {
+ /* display: flex; /* Aligne les éléments en ligne */
+  justify-content: center; /* Centre horizontalement */
+  margin-bottom: 5vw;
+}
+
+.separation{
+  display: flex;
+}
+
+.countdown-item {
+  margin: 0vw 15vw 0 15vw; /* Espacement entre les éléments du compte à rebours */
+ /* width: 15vw; /* Largeur relative en fonction de la largeur de la vue */
+  height: 15vw; /* Hauteur relative en fonction de la largeur de la vue */
+  color: #171717; /* Couleur de texte blanc */
+  font-size: 15vw; /* Taille de la police relative en fonction de la largeur de la vue */
+  text-align: center; /* Centrage du contenu */
+  line-height: 25vw; /* Alignement vertical */
+  border-radius: 10px; /* Bordure arrondie */
+  font-family: "DMSerif", sans-serif;
+
+}
+
+
+.textSaveTheDate {
+  font-family:  "Great Vibes", sans-serif;
+  color: #171717;
+  font-size: 10vw;
+  margin-bottom: 2vw; /* Espacement par rapport au compte à rebours */
+}
+
+.element{
+  margin-top: 2vw; /* Espacement entre les éléments du compte à rebours */
+  width: 15vw; /* Largeur relative en fonction de la largeur de la vue */
+  height: 15vw; /* Hauteur relative en fonction de la largeur de la vue */
+  color: #414141; /* Couleur de texte blanc */
+  font-size: 3.2vw; /* Taille de la police relative en fonction de la largeur de la vue */
+  text-align: center; /* Centrage du contenu */
+  line-height: 15vw; /* Alignement vertical */
+  border-radius: 10px; /* Bordure arrondie */
+  font-family: "DMSerif";
+
+
+}
+.temps{
+  display: flex; /* Aligne les éléments en colonne */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center;
+  width: 40vw;
+
+}
+
+#secondePartie {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+
+
+}
+#troisiemePartie {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+
+
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#quatriemePartie {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+
+
+}
+
+.contenaireImage {
+  background-color: #92989b;
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
+  padding: 0vw; /* Ajustez selon vos besoins */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  border-radius: 0.9vw; /* Ajustez selon vos besoins */
+  width: 62vw; /* Ajustez selon vos besoins */
+  height: 62vw; /* Ajustez selon vos besoins */
+}
+
+.contenaireImage .image {
+  border-radius: 0.7vw; /* Ajustez selon vos besoins */
+  width: 87%; /* Empêche l'image de déborder */
+  height: 87%; /* Empêche l'image de déborder */
+  object-fit: contain; /* Ajustez le comportement de l'image */
+}
+
+.lien {
+  text-align: center; /* Centrer le bouton horizontalement */
+}
+
+.lien a {
+  display: inline-block; /* Afficher en ligne pour pouvoir définir la largeur */
+  padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+  background-color: #c2c2c2; /* Couleur de fond beige foncé */
+  color: white; /* Couleur du texte en blanc */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  border-radius: 10px; /* Bords arrondis */
+  transition: background-color 0.3s; /* Transition pour l'animation du survol */
+}
+
+.lien a:hover {
+  background-color: #8f8f8f; /* Changement de couleur de fond au survol */
+}
+
+#partieChabbat {
+  width: 100%;
+  height: 100%;
+background-color: #fffaf4;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+
+}
+
+/* Styles à personnaliser selon vos préférences */
+#page-intro {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/background-Kotel.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  margin-top: 20vw;
+}
+
+#show-invitation {
+  margin-top: 5vw;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #d1b079;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2vw;
+  text-align: center; /* Centrer horizontalement */
+}
+#reponse {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5vw;
+}
+
+form {
+  background-color: rgba(220, 220, 220, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour inclure la bordure dans la largeur et la hauteur */
+  font-family: 'calibri', sans-serif; /* Utilisation de la police Berlin Sans FB */
+  font-size: 3.8vw;
+}
+
+input[type="submit"] {
+  background-color: #cccccc;
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
+
+  color: #171717;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #c4c4c4;
+}
+
+/* Styles pour la barre de navigation */
+#navbar {
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px; /* Ajustez la hauteur selon vos besoins */
+  display: none; /* Masquer la barre de navigation par défaut */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100%; /* Assure que la liste occupe toute la hauteur de la barre de navigation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #fffaf4; /* Couleur de fond douce */
+  padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+}
+
+.round {
+  background-color: #c7c7c7; /* Couleur de fond pour le cercle */
+  color: #fffaf4; /* Couleur du texte à l'intérieur du cercle */
+  border-radius: 50%; /* Pour rendre le cercle arrondi */
+  width: 6vw; /* Taille du cercle */
+  height: 6vw; /* Taille du cercle */
+  line-height: 50px; /* Pour centrer le texte verticalement */
+  font-size: 4vw; /* Taille du texte */
+  display: inline-block; /* Pour que le cercle s'affiche correctement */
+  margin-bottom: 10px; /* Espacement entre le cercle et le texte */
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: #333; /* Couleur du texte */
+  font-size: 4vw; /* Taille du texte */
+  display: block; /* Pour que le texte apparaisse sur une ligne séparée */
+  margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+}
+
+.instagram-logo {
+  height: 3vw; /* Taille de l'icône Instagram */
+  width: auto; /* Ajustement automatique de la largeur */
+}
+
+
+
+
+
+
+
