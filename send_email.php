@@ -2,10 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Charger les classes PHPMailer
+// Chargez les classes PHPMailer
 require 'vendor/autoload.php';
 
-// Créer une instance de PHPMailer
+// Créez une instance de PHPMailer
 $phpmailer = new PHPMailer();
 
 try {
@@ -23,7 +23,7 @@ try {
     $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : '';
     $nePourrontAssister = isset($_POST['ne-pourront-assister']);
     $reception = isset($_POST['reception']) ? 'Assisteront à la réception' : '';
-    $tephiline = isset($_POST['tephiline']) ? 'Assisteront au chabbat' : '';
+    $tephiline = isset($_POST['tephiline']) ? 'Assisteront à la mise des téphiline' : '';
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
     $message = isset($_POST['message']) ? $_POST['message'] : '';
 
@@ -84,7 +84,7 @@ try {
     }
 
     $corpsEmail .= "<div class='message'>
-            <h2>Message aux mariés :</h2>
+            <h2>Message au bar-mitzvah :</h2>
             <p>$message</p>
         </div>
         </div>
@@ -99,11 +99,10 @@ try {
 
     echo "<script type='text/javascript'>";
     echo "window.onload = function() {";
-    echo "  alert('Formulaire envoyé avec succès !');";
+    echo "  alert('Ceci est un pop-up généré depuis PHP !');";
     echo "}";
     echo "</script>";
 
 } catch (Exception $e) {
-    echo "L'e-mail n'a pas pu être envoyé. Erreur de l'expéditeur: {$phpmailer->ErrorInfo}";
 }
-?>
+
