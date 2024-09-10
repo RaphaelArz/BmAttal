@@ -124,7 +124,7 @@
     <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Réponse</a>
 
 
-    <form id="myForm"  method="post">
+    <form id="myForm" method="post">
         <div class="form-group">
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" required>
@@ -148,7 +148,6 @@
             <input type="number" id="nombrePersonnesTephilines" name="nombrePersonnesTephilines" min="1">
         </div>
 
-
         <div class="form-group">
             <label for="message">Message pour Nathane:</label>
             <textarea id="message" name="message" placeholder="Mazal tov Nathane !" rows="4"></textarea>
@@ -159,27 +158,48 @@
     </form>
 </div>
 </div>
-<audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
-<script defer src="/js/sheet.js"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+    <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
+    <script defer src="/js/sheet.js"></script>
 
-        const tephilinesCheckbox = document.getElementById('tephilines');
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sélection des cases à cocher
+            const nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
+            const tephilinesCheckbox = document.getElementById('tephilines');
+            const tephilinesField = document.getElementById('tephilinesField');
 
-        const tephilinesField = document.getElementById('tephilinesField');
-
-
-        tephilinesCheckbox.addEventListener('change', function() {
-            if (this.checked) {
-                tephilinesField.classList.remove('hidden');
-            } else {
-                tephilinesField.classList.add('hidden');
+            // Fonction pour décocher "Ne pourront pas assister" lorsque les autres cases sont cochées
+            function uncheckNePourrontAssister() {
+                if (tephilinesCheckbox.checked) {
+                    nePourrontAssisterCheckbox.checked = false;
+                }
             }
+
+            // Fonction pour décocher toutes les autres cases lorsque "Ne pourront pas assister" est cochée
+            function uncheckAllOthers() {
+                if (nePourrontAssisterCheckbox.checked) {
+                    tephilinesCheckbox.checked = false;
+                    tephilinesField.classList.add('hidden'); // Masquer le champ "Nombre de personnes"
+                }
+            }
+
+            // Écouteurs d'événements sur le changement des cases à cocher
+            tephilinesCheckbox.addEventListener('change', function() {
+                uncheckNePourrontAssister();
+                // Afficher ou masquer le champ "Nombre de personnes" selon l'état de la case à cocher
+                if (this.checked) {
+                    tephilinesField.classList.remove('hidden');
+                } else {
+                    tephilinesField.classList.add('hidden');
+                }
+            });
+
+            nePourrontAssisterCheckbox.addEventListener('change', uncheckAllOthers);
         });
-    });
-</script>
-<script>
+    </script>
+
+    <script>
     function playMusic() {
         var audio = document.getElementById("myAudio");
         audio.play();
