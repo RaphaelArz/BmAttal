@@ -216,28 +216,17 @@
                 <label for="reception">Assisteront à la réception</label>
             </div>
             <div id="receptionField" class="hidden">
-                <div>
-                    <label for="nombreAdultesReception">Nombre d'adultes à la réception:</label>
-                    <input type="number" id="nombreAdultesReception" name="nombreAdultesReception" min="1">
-                </div>
-                <div>
-                    <label for="nombreEnfantsReception">Nombre d'enfants à la réception:</label>
-                    <input type="number" id="nombreEnfantsReception" name="nombreEnfantsReception" min="1">
-                </div>
+                <label for="nombrePersonnesReception">Nombre de personnes à la réception:</label>
+                <input type="number" id="nombrePersonnesReception" name="nombrePersonnesReception" min="1">
             </div>
+
             <div class="checkbox-group">
                 <input type="checkbox" id="chabbat" name="chabbat">
                 <label for="chabbat">Assisteront au chabbat</label>
             </div>
             <div id="chabbatField" class="hidden">
-                <div>
-                    <label for="nombreAdultesChabbat">Nombre d'adultes au chabbat:</label>
-                    <input type="number" id="nombreAdultesChabbat" name="nombreAdultesChabbat" min="1">
-                </div>
-                <div>
-                    <label for="nombreEnfantsChabbat">Nombre d'enfants au chabbat:</label>
-                    <input type="number" id="nombreEnfantsChabbat" name="nombreEnfantsChabbat" min="1">
-                </div>
+                <label for="nombrePersonnesChabbat">Nombre de personnes au chabbat:</label>
+                <input type="number" id="nombrePersonnesChabbat" name="nombrePersonnesChabbat" min="1">
             </div>
 
             <div class="form-group">
@@ -248,46 +237,33 @@
                 <i class="fas fa-paper-plane"></i> Envoyer
             </button>
         </form>
-    </div>
-</div>
-    <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
+        <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const receptionCheckbox = document.getElementById('reception');
-            const chabbatCheckbox = document.getElementById('chabbat');
-            const tephilinesCheckbox = document.getElementById('tephilines');
-            const receptionField = document.getElementById('receptionField');
-            const chabbatField = document.getElementById('chabbatField');
-            const tephilinesField = document.getElementById('tephilinesField');
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const receptionCheckbox = document.getElementById('reception');
+                const chabbatCheckbox = document.getElementById('chabbat');
+                const tephilinesCheckbox = document.getElementById('tephilines');
+                const receptionField = document.getElementById('receptionField');
+                const chabbatField = document.getElementById('chabbatField');
+                const tephilinesField = document.getElementById('tephilinesField');
 
-            receptionCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    receptionField.classList.remove('hidden');
-                } else {
-                    receptionField.classList.add('hidden');
-                }
+                receptionCheckbox.addEventListener('change', function() {
+                    receptionField.classList.toggle('hidden', !this.checked);
+                });
+
+                chabbatCheckbox.addEventListener('change', function() {
+                    chabbatField.classList.toggle('hidden', !this.checked);
+                });
+
+                tephilinesCheckbox.addEventListener('change', function() {
+                    tephilinesField.classList.toggle('hidden', !this.checked);
+                });
             });
+        </script>
 
-            chabbatCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    chabbatField.classList.remove('hidden');
-                } else {
-                    chabbatField.classList.add('hidden');
-                }
-            });
 
-            tephilinesCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    tephilinesField.classList.remove('hidden');
-                } else {
-                    tephilinesField.classList.add('hidden');
-                }
-            });
-        });
-    </script>
-
-<script>
+        <script>
     function playMusic() {
         var audio = document.getElementById("myAudio");
         audio.play();

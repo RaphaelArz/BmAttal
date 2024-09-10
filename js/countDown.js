@@ -8,7 +8,7 @@ function updateCountdown() {
 
   if (difference <= 0) {
     // Le mariage est déjà passé
-    document.getElementById('countdown').innerHTML = "Le mariage est passé!";
+    document.getElementById('countdown').innerHTML = "L'événement est terminé !";
   } else {
     var days = Math.floor(difference / (1000 * 60 * 60 * 24));
     var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
