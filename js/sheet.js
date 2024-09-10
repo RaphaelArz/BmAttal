@@ -12,6 +12,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     sendingMessage.style.color = '#c0c0c0';
     sendingMessage.style.padding = '20px';
     sendingMessage.style.borderRadius = '5px';
+    sendingMessage.style.height = '18vw'
+    sendingMessage.style.width='48vw'
+    sendingMessage.style.alignContent = "center";
+    sendingMessage.style.alignSelf="center"
     sendingMessage.style.zIndex = '9999';
     sendingMessage.style.border = '2px solid #dab984';
     document.body.appendChild(sendingMessage);
