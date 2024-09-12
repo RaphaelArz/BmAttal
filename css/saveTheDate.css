@@ -78,7 +78,7 @@ body {
 }
 
 .stdText{
-    color: rgb(255, 255, 255);
+    color: rgb(218, 185, 132);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
             2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
@@ -111,7 +111,7 @@ body {
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 3px solid #ffffff;
+    border: 3px solid #dab984;
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -123,7 +123,7 @@ body {
 
 }
 .elementDecompte2{
-    border: 3px solid #ffffff;
+    border: 3px solid #dab984;
 
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
@@ -138,16 +138,22 @@ body {
 }
 .texteDecompte {
     font-family: DMSerif, sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 10px rgb(0, 0, 0); /* Ombre légère similaire à celle de la bordure */
-    font-size: 1rem;
+    color: rgb(218, 185, 132);
+    text-shadow:
+            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            2px 1px 0 #3a3a3a, /* Ombre diagonale */
+            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */    font-size: 1rem;
 }
 
 .chiffreDecompte {
-    color: rgb(255, 255, 255);
+    color: rgb(218, 185, 132);
     font-family: DMSerif, sans-serif;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0); /* Ombre légère similaire à celle de la bordure */
-    font-size: 1.6rem;
+    text-shadow:
+            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            2px 1px 0 #3a3a3a, /* Ombre diagonale */
+            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */    font-size: 1.6rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -159,7 +165,7 @@ body {
     padding-top: 115vw;
 }
 #date{
-    color: rgb(255, 255, 255);
+    color: rgb(218, 185, 132);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
             2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
