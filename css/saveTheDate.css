@@ -78,13 +78,13 @@ body {
 }
 
 .stdText{
-    color: rgb(217, 217, 217);
+    color: rgb(255, 255, 255);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
-            1px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            1px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            1px 1px 0 #3a3a3a, /* Ombre diagonale */
-            1px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
+            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            2px 1px 0 #3a3a3a, /* Ombre diagonale */
+            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
     font-size: 16vw;
 
 }
@@ -111,7 +111,7 @@ body {
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 3px solid #383838;
+    border: 3px solid #ffffff;
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -119,52 +119,52 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
-.elementDecompte2{
-    border: 3px solid #383838;
-    border-radius: 10px;
-    width: 70px; /* Largeur fixe pour une taille uniforme */
-    height: 70px; /* Hauteur fixe pour une taille uniforme */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre subtile en bas à droite */
 
 }
-.texteDecompte{
-    font-family: DMSerif, sans-serif;color: rgb(38, 38, 38);
-    text-shadow:
-            0.5px 0.5px 0 #d2dae8, /* Ombre à droite et en bas */
-            0.5px 0.5px 0 #d2dae8, /* Ombre à gauche et en haut */
-            0.5px 0.5px 0 #d2dae8, /* Ombre diagonale */
-            0.5px 0.5px 0 #d2dae8; /* Ombre diagonale inverse */
+.elementDecompte2{
+    border: 3px solid #ffffff;
+
+    border-radius: 10px;
+    width: 70px; /* Largeur fixe pour une taille uniforme */
+    height: 70px; /* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile en bas à droite */
+
+
+}
+.texteDecompte {
+    font-family: DMSerif, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.56); /* Ombre légère similaire à celle de la bordure */
     font-size: 1rem;
 }
-.chiffreDecompte{
-    color: rgb(38, 38, 38);
-    font-family: DMSerif,sans-serif;
-    text-shadow:
-            0.5px 0.5px 0 #383838, /* Ombre à droite et en bas */
-            0.5px 0.5px 0 #383838, /* Ombre à gauche et en haut */
-            0.5px 0.5px 0 #383838, /* Ombre diagonale */
-            0.5px 0.5px 0 #383838; /* Ombre diagonale inverse */
+
+.chiffreDecompte {
+    color: rgb(255, 255, 255);
+    font-family: DMSerif, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.56); /* Ombre légère similaire à celle de la bordure */
     font-size: 1.6rem;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
+
 #decompte{
 
     padding-top: 115vw;
 }
 #date{
-    color: rgb(217, 217, 217);
+    color: rgb(255, 255, 255);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
-            1px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            1px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            1px 1px 0 #3a3a3a, /* Ombre diagonale */
-            1px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
+            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            2px 1px 0 #3a3a3a, /* Ombre diagonale */
+            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
 
 }
