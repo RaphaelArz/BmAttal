@@ -119,11 +119,11 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre subtile en bas à droite */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
 
 }
 .elementDecompte2{
-    border: 3px solid #eeeeee;
+    border: 3px solid #ffffff;
 
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
@@ -132,21 +132,21 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile en bas à droite */
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
 
 
 }
 .texteDecompte {
     font-family: DMSerif, sans-serif;
-    color: rgb(240, 240, 240);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.56); /* Ombre légère similaire à celle de la bordure */
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgb(0, 0, 0); /* Ombre légère similaire à celle de la bordure */
     font-size: 1rem;
 }
 
 .chiffreDecompte {
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
     font-family: DMSerif, sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.56); /* Ombre légère similaire à celle de la bordure */
+    text-shadow: 5px 5px 10px rgb(0, 0, 0); /* Ombre légère similaire à celle de la bordure */
     font-size: 1.6rem;
     align-items: center;
     justify-content: center;
