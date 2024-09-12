@@ -595,7 +595,9 @@ form textarea {
   display: none;
 }
 
-
+label{
+  text-align: center;
+}
 
 
 
