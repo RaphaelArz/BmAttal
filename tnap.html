@@ -168,6 +168,7 @@
             const nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
             const tephilinesCheckbox = document.getElementById('tephilines');
             const tephilinesField = document.getElementById('tephilinesField');
+            const tephilinesInput = document.getElementById('nombrePersonnesTephilines');
 
             // Fonction pour décocher "Ne pourront pas assister" lorsque les autres cases sont cochées
             function uncheckNePourrontAssister() {
@@ -181,18 +182,25 @@
                 if (nePourrontAssisterCheckbox.checked) {
                     tephilinesCheckbox.checked = false;
                     tephilinesField.classList.add('hidden'); // Masquer le champ "Nombre de personnes"
+                    tephilinesInput.removeAttribute('required'); // Rendre le champ non obligatoire
+                }
+            }
+
+            // Fonction pour mettre à jour l'état de visibilité et de "required" du champ
+            function toggleTephilinesField() {
+                if (tephilinesCheckbox.checked) {
+                    tephilinesField.classList.remove('hidden');
+                    tephilinesInput.setAttribute('required', 'required'); // Rendre le champ obligatoire
+                } else {
+                    tephilinesField.classList.add('hidden');
+                    tephilinesInput.removeAttribute('required'); // Rendre le champ non obligatoire
                 }
             }
 
             // Écouteurs d'événements sur le changement des cases à cocher
             tephilinesCheckbox.addEventListener('change', function() {
                 uncheckNePourrontAssister();
-                // Afficher ou masquer le champ "Nombre de personnes" selon l'état de la case à cocher
-                if (this.checked) {
-                    tephilinesField.classList.remove('hidden');
-                } else {
-                    tephilinesField.classList.add('hidden');
-                }
+                toggleTephilinesField();
             });
 
             nePourrontAssisterCheckbox.addEventListener('change', uncheckAllOthers);

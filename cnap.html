@@ -188,7 +188,7 @@
     <div id="reponse">
         <a class="txtImportant" style="font-size: 22vw; color: #afafaf">Réponse</a>
 
-        <form id="myForm" action="send_email.php" method="post">
+        <form id="myForm"  method="post">
             <div class="form-group">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
@@ -251,18 +251,35 @@
                 const chabbatField = document.getElementById('chabbatField');
                 const tephilinesField = document.getElementById('tephilinesField');
 
+                const receptionInput = document.getElementById('nombrePersonnesReception');
+                const chabbatInput = document.getElementById('nombrePersonnesChabbat');
+                const tephilinesInput = document.getElementById('nombrePersonnesTephilines');
+
+                // Fonction pour mettre à jour l'état de visibilité et de "required" des champs
+                function toggleField(checkbox, field, input) {
+                    if (checkbox.checked) {
+                        field.classList.remove('hidden');
+                        input.setAttribute('required', 'required');
+                    } else {
+                        field.classList.add('hidden');
+                        input.removeAttribute('required');
+                    }
+                }
+
+                // Écouteurs d'événements pour les changements de checkbox
                 receptionCheckbox.addEventListener('change', function() {
-                    receptionField.classList.toggle('hidden', !this.checked);
+                    toggleField(this, receptionField, receptionInput);
                 });
 
                 chabbatCheckbox.addEventListener('change', function() {
-                    chabbatField.classList.toggle('hidden', !this.checked);
+                    toggleField(this, chabbatField, chabbatInput);
                 });
 
                 tephilinesCheckbox.addEventListener('change', function() {
-                    tephilinesField.classList.toggle('hidden', !this.checked);
+                    toggleField(this, tephilinesField, tephilinesInput);
                 });
             });
+
         </script>
 
 

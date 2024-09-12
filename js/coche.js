@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fonction pour décocher les autres cases et masquer les champs lorsque "Ne pourront pas assister" est cochée
     function handleNePourrontAssisterChange() {
         if (nePourrontAssisterCheckbox.checked) {
-            receptionCheckbox.checked = false;
             tephilinesCheckbox.checked = false;
+            receptionCheckbox.checked = false;
             chabbatCheckbox.checked = false;
             hideAllFields();  // Masquer tous les champs
         }
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
     chabbatCheckbox.addEventListener('change', handleOtherCheckboxesChange);
 
     // Écouteurs d'événements pour afficher ou masquer les champs de nombre de personnes
-    receptionCheckbox.addEventListener('change', function() {
-        receptionField.classList.toggle('hidden', !this.checked);
-    });
+
 
     tephilinesCheckbox.addEventListener('change', function() {
         tephilinesField.classList.toggle('hidden', !this.checked);
     });
-
+    receptionCheckbox.addEventListener('change', function() {
+        receptionField.classList.toggle('hidden', !this.checked);
+    });
     chabbatCheckbox.addEventListener('change', function() {
         chabbatField.classList.toggle('hidden', !this.checked);
     });

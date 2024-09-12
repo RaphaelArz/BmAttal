@@ -134,13 +134,13 @@
 
         <div class="txtSecondePartie">
             <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Récéption</a>
-            <a class="txtSecondePartie">Daniel et Séverine</a>
+            <a class="txtSecondePartie">Alexandre et Liza</a>
             <a class="txtSecondePartie">seraient heureux de vous recevoir le</a>
 
             <a class="txtImportant" style="font-size: 12vw ;color: #afafaf">Dimanche 23 mars 2025</a>
 
             <a class="txtSecondePartie">pour la récéption organisée en l'honneur de</a>
-            <a class="txtImportant" style="font-size: 10vw ;color: #afafaf">Raphaël</a>
+            <a class="txtImportant" style="font-size: 10vw ;color: #afafaf">Nathane</a>
             <a class="txtSecondePartie">en la salle Royal garden</a>
             <a class="txtSecondePartie"> Rue de la Sucrerie, 95380 Villeron</a>
             <a class="txtSecondePartie" style="color: #afafaf">ambiance assurée !</a>
@@ -158,7 +158,7 @@
     <div id="reponse">
         <a class="txtImportant" style="font-size: 22vw; color: #afafaf">Réponse</a>
 
-        <form id="myForm" action="send_email.php" method="post">
+        <form id="myForm"  method="post">
             <div class="form-group">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
@@ -205,21 +205,62 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const receptionCheckbox = document.getElementById('reception');
+        // Sélection des cases à cocher et des champs associés
+        const nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
         const tephilinesCheckbox = document.getElementById('tephilines');
-        const receptionField = document.getElementById('receptionField');
+        const receptionCheckbox = document.getElementById('reception');
         const tephilinesField = document.getElementById('tephilinesField');
+        const receptionField = document.getElementById('receptionField');
+
+        const tephilinesInput = document.getElementById('nombrePersonnesTephilines');
+        const receptionInput = document.getElementById('nombrePersonnesReception');
+
+        // Fonction pour décocher "Ne pourront pas assister" lorsque les autres cases sont cochées
+        function uncheckNePourrontAssister() {
+            if (tephilinesCheckbox.checked || receptionCheckbox.checked) {
+                nePourrontAssisterCheckbox.checked = false;
+            }
+        }
+
+        // Fonction pour décocher toutes les autres cases lorsque "Ne pourront pas assister" est cochée
+        function uncheckAllOthers() {
+            if (nePourrontAssisterCheckbox.checked) {
+                tephilinesCheckbox.checked = false;
+                receptionCheckbox.checked = false;
+                tephilinesField.classList.add('hidden'); // Masquer le champ "Nombre de personnes"
+                receptionField.classList.add('hidden');   // Masquer le champ "Nombre de personnes"
+                tephilinesInput.removeAttribute('required'); // Rendre le champ non obligatoire
+                receptionInput.removeAttribute('required'); // Rendre le champ non obligatoire
+            }
+        }
+
+        // Fonction pour mettre à jour l'état de visibilité et de "required" des champs
+        function toggleField(checkbox, field, input) {
+            if (checkbox.checked) {
+                field.classList.remove('hidden');
+                input.setAttribute('required', 'required'); // Rendre le champ obligatoire
+            } else {
+                field.classList.add('hidden');
+                input.removeAttribute('required'); // Rendre le champ non obligatoire
+            }
+        }
+
+        // Écouteurs d'événements pour les changements de checkbox
+        tephilinesCheckbox.addEventListener('change', function() {
+            uncheckNePourrontAssister();
+            toggleField(this, tephilinesField, tephilinesInput);
+        });
 
         receptionCheckbox.addEventListener('change', function() {
-            receptionField.classList.toggle('hidden', !this.checked);
+            uncheckNePourrontAssister();
+            toggleField(this, receptionField, receptionInput);
         });
 
-        tephilinesCheckbox.addEventListener('change', function() {
-            tephilinesField.classList.toggle('hidden', !this.checked);
-        });
+        nePourrontAssisterCheckbox.addEventListener('change', uncheckAllOthers);
     });
-</script>
 
+
+</script>
 
 
 <script>
