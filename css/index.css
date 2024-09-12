@@ -5,6 +5,12 @@
   src:  url('/police/BRLNSR.woff') format('woff');
 }
 @font-face {
+  font-family: 'Membra';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/membra.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Brush Script MT';
   font-style: normal;
   font-weight: normal;
@@ -502,6 +508,7 @@ span {
   font-size: 4vw; /* Taille du texte */
   display: block; /* Pour que le texte apparaisse sur une ligne séparée */
   margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+  text-decoration: black;
 }
 
 .instagram-logo {
@@ -597,6 +604,12 @@ form textarea {
 
 label{
   text-align: center;
+}
+
+footer{
+  font-family: Membra, sans-serif;
+  text-decoration: none;
+
 }
 
 
