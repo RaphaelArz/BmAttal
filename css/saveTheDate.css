@@ -78,13 +78,13 @@ body {
 }
 
 .stdText{
-    color: #dab984;
+    color: rgb(217, 217, 217);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
-            1px 1px 0 #806946, /* Ombre à droite et en bas */
-            -1px -1px 0 #000000, /* Ombre à gauche et en haut */
-            1px -1px 0 #000000, /* Ombre diagonale */
-            -1px 1px 0 #000000; /* Ombre diagonale inverse */
+            1px 1px 0 #727272, /* Ombre à droite et en bas */
+            1px 1px 0 #727272, /* Ombre à gauche et en haut */
+            1px 1px 0 #727272, /* Ombre diagonale */
+            1px 1px 0 #727272; /* Ombre diagonale inverse */
     font-size: 16vw;
 
 }
@@ -111,7 +111,7 @@ body {
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 3px solid #000000;
+    border: 3px solid #383838;
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -121,7 +121,7 @@ body {
     flex-direction: column;
 }
 .elementDecompte2{
-    border: 3px solid #000000;
+    border: 3px solid #383838;
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -132,13 +132,22 @@ body {
 
 }
 .texteDecompte{
-    font-family: DMSerif, sans-serif;
+    font-family: DMSerif, sans-serif;color: rgb(38, 38, 38);
+    text-shadow:
+            0.5px 0.5px 0 #d2dae8, /* Ombre à droite et en bas */
+            0.5px 0.5px 0 #d2dae8, /* Ombre à gauche et en haut */
+            0.5px 0.5px 0 #d2dae8, /* Ombre diagonale */
+            0.5px 0.5px 0 #d2dae8; /* Ombre diagonale inverse */
     font-size: 1rem;
-    color: #000000;
 }
 .chiffreDecompte{
-    color: #000000;
+    color: rgb(38, 38, 38);
     font-family: DMSerif,sans-serif;
+    text-shadow:
+            0.5px 0.5px 0 #383838, /* Ombre à droite et en bas */
+            0.5px 0.5px 0 #383838, /* Ombre à gauche et en haut */
+            0.5px 0.5px 0 #383838, /* Ombre diagonale */
+            0.5px 0.5px 0 #383838; /* Ombre diagonale inverse */
     font-size: 1.6rem;
     align-items: center;
     justify-content: center;
@@ -149,4 +158,13 @@ body {
 
     padding-top: 115vw;
 }
+#date{
+    color: rgb(217, 217, 217);
+    font-weight: 700; /* Valeur typique pour le gras */
+    text-shadow:
+            1px 1px 0 #727272, /* Ombre à droite et en bas */
+            1px 1px 0 #727272, /* Ombre à gauche et en haut */
+            1px 1px 0 #727272, /* Ombre diagonale */
+            1px 1px 0 #727272; /* Ombre diagonale inverse */
 
+}
