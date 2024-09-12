@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Utiliser la hauteur de la fenêtre */
+    background-image: url('/img/photoSaveTheDate.jpg');
+    background-size: cover; /* Pour que l'image couvre toute la page */
+    background-position: center; /* Pour centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    padding-top: 10vw;
+}
+#zoneTravail{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#txtSaveTheDate{
+    font-family: "Great Vibes", sans-serif;
+    font-weight: 700; /* Valeur typique pour le gras */
+
+    font-size: 16vw;
+
+}
