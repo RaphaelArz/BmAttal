@@ -81,10 +81,10 @@ body {
     color: rgb(217, 217, 217);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
-            1px 1px 0 #727272, /* Ombre à droite et en bas */
-            1px 1px 0 #727272, /* Ombre à gauche et en haut */
-            1px 1px 0 #727272, /* Ombre diagonale */
-            1px 1px 0 #727272; /* Ombre diagonale inverse */
+            1px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            1px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            1px 1px 0 #3a3a3a, /* Ombre diagonale */
+            1px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
     font-size: 16vw;
 
 }
@@ -162,9 +162,9 @@ body {
     color: rgb(217, 217, 217);
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow:
-            1px 1px 0 #727272, /* Ombre à droite et en bas */
-            1px 1px 0 #727272, /* Ombre à gauche et en haut */
-            1px 1px 0 #727272, /* Ombre diagonale */
-            1px 1px 0 #727272; /* Ombre diagonale inverse */
+            1px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
+            1px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
+            1px 1px 0 #3a3a3a, /* Ombre diagonale */
+            1px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
 
 }
