@@ -111,7 +111,7 @@ body {
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 3px solid #dab984;
+    border: 3px solid #73d3ff;
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -123,7 +123,7 @@ body {
 
 }
 .elementDecompte2{
-    border: 3px solid #dab984;
+    border: 3px solid #73d3ff;
 
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
@@ -138,7 +138,7 @@ body {
 }
 .texteDecompte {
     font-family: DMSerif, sans-serif;
-    color: rgb(218, 185, 132);
+    color: rgb(115, 211, 255);
     text-shadow:
             2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
             2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
@@ -147,7 +147,7 @@ body {
 }
 
 .chiffreDecompte {
-    color: rgb(218, 185, 132);
+    color: rgb(115, 211, 255);
     font-family: DMSerif, sans-serif;
     text-shadow:
             2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
