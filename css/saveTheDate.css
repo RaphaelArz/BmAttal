@@ -149,7 +149,7 @@ body {
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
     font-size: 5vw;
     font-weight: 700; /* Valeur typique pour le gras */
-    text-shadow: #000000 1px 0 7px;
+    /*text-shadow: #000000 1px 0 7px;*/
 }
 
 .chiffreDecompte {
