@@ -140,7 +140,7 @@ body {
 
 }
 .texteDecompte {
-    font-family:DMSerif , sans-serif;
+    font-family:"Times New Roman" , sans-serif;
     color: rgb(0, 0, 0);
     /*text-shadow:*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
@@ -148,19 +148,19 @@ body {
     /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
     font-size: 5vw;
-    font-weight: 700; /* Valeur typique pour le gras */
+    font-weight: 100; /* Valeur typique pour le gras */
     text-shadow: #000000 1px 0 2px;
 }
 
 .chiffreDecompte {
     color: rgb(0, 0, 0);
-    font-family: DMSerif, sans-serif;
+    font-family: "Times New Roman", sans-serif;
     /*text-shadow:*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
-    font-size: 12vw;
+    font-size: 11vw;
     align-items: center;
     justify-content: center;
     display: flex;
