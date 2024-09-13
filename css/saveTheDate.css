@@ -164,6 +164,8 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    font-weight: 100; /* Plus épais que 700 *!*/
+
 
     text-shadow: #000000 1px 0 7px;
 }
