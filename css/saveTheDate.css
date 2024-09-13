@@ -80,7 +80,7 @@ body {
 .stdText {
     color: rgb(255, 255, 255);
     font-weight: 900; /* Plus épais que 700 */
-    text-shadow: #011557 1px 0 7px;
+    text-shadow: #f8f300 1px 0 7px;
     font-size: 10vw;
     padding-right: 1vw;
 }
@@ -145,7 +145,7 @@ body {
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
     font-size: 1.15rem;
     font-weight: 700; /* Valeur typique pour le gras */
-    text-shadow: #011557 1px 0 7px;
+    text-shadow: #f8f300 1px 0 7px;
 }
 
 .chiffreDecompte {
@@ -161,7 +161,7 @@ body {
     justify-content: center;
     display: flex;
 
-    text-shadow: #011557 1px 0 7px;
+    text-shadow: #f8f300 1px 0 7px;
 }
 
 
@@ -172,7 +172,7 @@ body {
 #date{
     color: rgb(255, 255, 255);
     font-weight: 700; /* Valeur typique pour le gras */
-    text-shadow: #011557 1px 0 8px;
+    text-shadow: #f8f300 1px 0 8px;
     /*text-shadow:*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
