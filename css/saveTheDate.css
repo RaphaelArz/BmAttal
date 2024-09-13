@@ -77,25 +77,22 @@ body {
 
 }
 
-.stdText{
-    color: rgb(218, 185, 132);
-    font-weight: 700; /* Valeur typique pour le gras */
-    text-shadow:
-            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            2px 1px 0 #3a3a3a, /* Ombre diagonale */
-            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
-    font-size: 16vw;
-
+.stdText {
+    color: rgb(0, 0, 0);
+    font-weight: 900; /* Plus épais que 700 */
+    text-shadow: #000000 1px 0 10px;    font-size: 10vw;
+    /*padding-right: 4vw;*/
 }
 
+
 #txtSaveTheDate{
-    padding-top: 15vw;
-    font-family: "Great Vibes", sans-serif;
+    padding-top: 14vw;
+    font-family: "Amsterdam", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 900; /* Valeur typique pour le gras */
 
 
 }
@@ -111,7 +108,7 @@ body {
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 3px solid #dab984;
+   /* border: 3px solid #000000;*/
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
     height: 70px; /* Hauteur fixe pour une taille uniforme */
@@ -119,11 +116,11 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
+   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
 
 }
 .elementDecompte2{
-    border: 3px solid #dab984;
+   /*border: 3px solid #000000;*/
 
     border-radius: 10px;
     width: 70px; /* Largeur fixe pour une taille uniforme */
@@ -132,45 +129,52 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
+   /* box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.90); /* Ombre subtile en bas à droite */
 
 
 }
 .texteDecompte {
-    font-family: DMSerif, sans-serif;
-    color: rgb(218, 185, 132);
-    text-shadow:
-            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            2px 1px 0 #3a3a3a, /* Ombre diagonale */
-            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */    font-size: 1rem;
+    font-family:Amsterdam , sans-serif;
+    color: rgb(0, 0, 0);
+    /*text-shadow:*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
+    /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
+    font-size: 1.2rem;
+    font-weight: 700; /* Valeur typique pour le gras */
+    text-shadow: #000000 1px 0 10px;
 }
 
 .chiffreDecompte {
-    color: rgb(218, 185, 132);
+    color: rgb(0, 0, 0);
     font-family: DMSerif, sans-serif;
-    text-shadow:
-            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            2px 1px 0 #3a3a3a, /* Ombre diagonale */
-            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */    font-size: 2rem;
+    /*text-shadow:*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
+    /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
+    font-size: 2.5rem;
     align-items: center;
     justify-content: center;
     display: flex;
+
+    text-shadow: #000000 1px 0 10px;
 }
 
 
 #decompte{
 
-    padding-top: 115vw;
+    padding-top: 95vw;
 }
 #date{
-    color: rgb(218, 185, 132);
+    color: rgb(0, 0, 0);
     font-weight: 700; /* Valeur typique pour le gras */
-    text-shadow:
-            2px 1px 0 #3a3a3a, /* Ombre à droite et en bas */
-            2px 1px 0 #3a3a3a, /* Ombre à gauche et en haut */
-            2px 1px 0 #3a3a3a, /* Ombre diagonale */
-            2px 1px 0 #3a3a3a; /* Ombre diagonale inverse */
+    text-shadow: #000000 1px 0 10px;
+    /*text-shadow:*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
+    /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
+    /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!*/
 
 }
