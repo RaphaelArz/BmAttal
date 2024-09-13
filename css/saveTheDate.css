@@ -61,8 +61,11 @@
 
 
 body {
+    padding-top: 9vh;
+
     margin: 0;
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
     height: 100vh; /* Utiliser la hauteur de la fenêtre */
     background-image: url('/img/photoSaveTheDate.jpg');
     background-size: cover; /* Pour que l'image couvre toute la page */
@@ -74,21 +77,22 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
 }
 
 .stdText {
     color: rgb(0, 0, 0);
-    font-weight: 900; /* Plus épais que 700 */
+    /*font-weight: 900; !* Plus épais que 700 *!*/
     text-shadow: #000000 1px 0 7px;
-    font-size: 10vw;
-    padding-right: 1vw;
+    font-size:16vw;
+    padding-right: 2vw;
+
 }
 
 
 #txtSaveTheDate{
-    padding-top: 14vw;
-    font-family: "Amsterdam", sans-serif;
+    font-family: "Great Vibes", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +103,7 @@ body {
 }
 
 #decompte{
+    margin-top: 15vh;
 
     justify-content: center;
     align-items: center;
@@ -136,14 +141,14 @@ body {
 
 }
 .texteDecompte {
-    font-family:Amsterdam , sans-serif;
+    font-family:DMSerif , sans-serif;
     color: rgb(0, 0, 0);
     /*text-shadow:*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à droite et en bas *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
-    font-size: 1.15rem;
+    font-size: 5vw;
     font-weight: 700; /* Valeur typique pour le gras */
     text-shadow: #000000 1px 0 7px;
 }
@@ -156,7 +161,7 @@ body {
     /*        2px 1px 0 #3a3a3a, !* Ombre à gauche et en haut *!*/
     /*        2px 1px 0 #3a3a3a, !* Ombre diagonale *!*/
     /*        2px 1px 0 #3a3a3a; !* Ombre diagonale inverse *!   */
-    font-size: 2.5rem;
+    font-size: 10vw;
     align-items: center;
     justify-content: center;
     display: flex;
