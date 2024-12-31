@@ -89,6 +89,7 @@ body{
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   flex-direction: column; /* Arrange les éléments en colonne */
+  padding: 3vw;
 }
 
 .txtSecondePartie{
@@ -154,6 +155,7 @@ img {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   flex-direction: column; /* Arrange les éléments en colonne */
+
 
   line-height: 0; /* Réduit l'interligne */
 }
