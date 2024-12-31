@@ -16,28 +16,22 @@ document.getElementById("addEventButton").addEventListener("click", function() {
         `&location=${encodeURIComponent(eventDetails.location)}`;
 
     // Construire l'URL pour Apple Calendar (iOS/macOS)
-    const appleCalendarUrl = `webcal://www.google.com/calendar/render?action=TEMPLATE` +
-        `&text=${encodeURIComponent(eventDetails.title)}` +
-        `&dates=${eventDetails.startDate}/${eventDetails.endDate}` +
-        `&details=${encodeURIComponent(eventDetails.description)}` +
-        `&location=${encodeURIComponent(eventDetails.location)}`;
+    const appleCalendarUrl = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:${eventDetails.title}\nDESCRIPTION:${eventDetails.description}\nLOCATION:${eventDetails.location}\nDTSTART:${eventDetails.startDate}\nDTEND:${eventDetails.endDate}\nEND:VEVENT\nEND:VCALENDAR`;
 
-    // Détecter le type d'appareil
+    const blob = new Blob([appleCalendarUrl], { type: "text/calendar" });
+    const fileUrl = URL.createObjectURL(blob);
+
+    // Détecter l'appareil
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
         // Android - Ouvrir Google Calendar
         window.open(googleCalendarUrl, "_blank");
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        // iOS - Ouvrir l'URL webcal pour Apple Calendar
-        window.open(appleCalendarUrl, "_blank");
+        // iOS - Ouvrir directement l'événement dans l'application Calendrier
+        window.location.href = fileUrl;
     } else {
-        // PC ou autres appareils - Ouvrir Google Calendar
-        const isGoogleCalendarSupported = confirm(
-            "Vous allez être redirigé vers Google Calendar pour ajouter l'événement. Confirmez pour continuer."
-        );
-        if (isGoogleCalendarSupported) {
-            window.open(googleCalendarUrl, "_blank");
-        }
+        // Pour les autres appareils (PC, Mac) - Ouvrir Google Calendar
+        window.open(googleCalendarUrl, "_blank");
     }
 });
