@@ -154,6 +154,8 @@ img {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   flex-direction: column; /* Arrange les éléments en colonne */
+
+  line-height: 0; /* Réduit l'interligne */
 }
 
 
@@ -189,7 +191,7 @@ img {
   margin-bottom: 0;
   font-family: "DMSerif", sans-serif;
   color: #e5e5e5;
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
   font-weight: bold;
 }
