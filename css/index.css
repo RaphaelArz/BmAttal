@@ -99,7 +99,7 @@ body{
   flex-direction: column; /* Arrange les éléments en colonne */
   font-family: DMSerif,sans-serif;
   color: #171717;
-  font-size: 4.5vw;
+  font-size: 5vw;
 }
 .txtSecondePartieImportant{
   display: flex;
