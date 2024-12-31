@@ -47,21 +47,32 @@
 
     <div id="premierPartie">
         <div id="textPremierePartie">
-            <p class="annonce" style="font-family: 'torah sofer', sans-serif">d"cb</p>
-            <a class="annonce">La famille Attal,</a>
+            <img src="/img/oukchartamArgent2.png" alt="" style="width: 90%; height: 80%">
+            <div class="gpGauche" style="text-align: left; width: 90%; margin-bottom: 2vw">
+                <a class="annonce" style="text-align: left; font-size: 4vw">La famille Attal,</a>
+            </div>
             <a class="annonce">Alexandre et Liza,</a>
             <a class="annonce"> ont la joie de partager avec vous la</a>
             <a class="annonce"> Bar mitzvah de</a>
             <br>
-            <div class="txtImportant">Nathanaël</div>
-            <a class="txtImportant" style="font-family: 'torah sofer'">lntn</a>
+            <div class="gpGauche"><a class="txtImportant">Nathanaël</a>
+                <a class="txtImportant" style="font-family: 'torah sofer'">lantn</a>
+            </div>
 
-            <a class="annonce"> Entouré de son arrière grand mère Belamich Danielle</a>
-            <a class="annonce"> de ses grands parents Hubert et Muriel</a>
 
-            <br>
+            <a class="annonce"> Entouré de son arrière grand mère</a>
+            <a class="annonce">Belamich Danielle</a>
+
+            <a class="annonce" style="margin-bottom: 5vw"> de ses grands parents Hubert et Muriel</a>
+
+            <a class="annonce" style="font-size: 3.5vw">Une très grande pensée pour ceux qui</a>
+            <a class="annonce" style="font-size: 3.5vw">seront toujours dans nos coeurs.</a>
+
+
+
         </div>
-        <a href="#saveTheDate"> <img src="/img/flecheBas.png" style="width: 3vw; height: auto" class="btnLink"></a>
+        <a href="#saveTheDate"> <img src="/img/flecheBas.png" style="width: 3vw; height: auto; margin-bottom: 5vw"
+                                     class="btnLink"></a>
         <br>
         <br>
     </div>
@@ -125,7 +136,6 @@
     </div>
 
 
-
     <div id="quatriemePartie">
 
         <div class="contenaireImage">
@@ -162,7 +172,7 @@
     <div id="reponse">
         <a class="txtImportant" style="font-size: 22vw; color: #afafaf">Réponse</a>
 
-        <form id="myForm"  method="post">
+        <form id="myForm" method="post">
             <div class="form-group">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
@@ -208,7 +218,7 @@
 <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         // Sélection des cases à cocher et des champs associés
         const nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
         const tephilinesCheckbox = document.getElementById('tephilines');
@@ -250,12 +260,12 @@
         }
 
         // Écouteurs d'événements pour les changements de checkbox
-        tephilinesCheckbox.addEventListener('change', function() {
+        tephilinesCheckbox.addEventListener('change', function () {
             uncheckNePourrontAssister();
             toggleField(this, tephilinesField, tephilinesInput);
         });
 
-        receptionCheckbox.addEventListener('change', function() {
+        receptionCheckbox.addEventListener('change', function () {
             uncheckNePourrontAssister();
             toggleField(this, receptionField, receptionInput);
         });

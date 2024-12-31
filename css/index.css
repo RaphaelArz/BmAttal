@@ -83,7 +83,7 @@ body{
 }
 
 #textPremierePartie{
-  margin-top: 12vw;
+  /*margin-top: 12vw;*/
   background-position: center;
   display: flex;
   justify-content: center; /* Centre horizontalement */
@@ -176,16 +176,25 @@ img {
   margin-bottom: 0vw; /* Réduit l'espacement entre le texte "בס״ד" et le texte hébreu */
 }
 
+.gpGauche{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  text-align: left;
+  gap: 3vw;
+}
 .annonce{
   font-family: "DMSerif", sans-serif;
   color: #e5e5e5;
-  font-size: 6vw;
+  font-size: 4vw;
   text-align: center;
-  max-width: 85%;
+  font-weight: bold;
+  max-width: 100%;
 }
 .txtImportant{
   color: #d0d0d0;
-  font-size: 18vw;
+  font-size: 13vw;
   font-family: "Great Vibes" , sans-serif;
 }
 
