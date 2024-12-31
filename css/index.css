@@ -185,12 +185,13 @@ img {
   gap: 3vw;
 }
 .annonce{
+  padding: 3.5vw;
+  margin-bottom: 0;
   font-family: "DMSerif", sans-serif;
   color: #e5e5e5;
   font-size: 4vw;
   text-align: center;
   font-weight: bold;
-  max-width: 100%;
 }
 .txtImportant{
   color: #d0d0d0;
