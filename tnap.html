@@ -55,12 +55,10 @@
 
     <div id="premierPartie">
         <div id="textPremierePartie">
-            <img src="/img/oukchartamargent2.png" alt="" style="width: 90%; height: 80%"  >
+            <img src="/img/oukchartamargent2.png" alt="" style="width: 90%; height: auto; margin-top: 0"  >
             <div style="margin-bottom: 6vw"></div>
-            <div class="gpGauche" style="text-align: left; width: 90%; margin-bottom: 3vw">
-                <a class="annonce" style="text-align: left; font-size: 4.5vw">La famille Attal,</a>
-            </div>
-            <a class="annonce">Alexandre et Liza,</a>
+
+            <a class="annonce">Liza et Alexandre Attal,</a>
             <a class="annonce"> ont la joie de partager avec vous la</a>
             <a class="annonce" style="margin-bottom: 15vw"> Bar mitzvah de</a>
             <br>br
@@ -75,18 +73,107 @@
             <a class="annonce" style="margin-bottom: 5vw">Hubert et Muriel</a>
 
 
-            <a class="annonce" style="font-size: 4vw">Une très grande pensée pour ceux qui</a>
-            <a class="annonce" style="font-size: 4vw">seront toujours dans nos coeurs.</a>
+            <a class="annonce" style="font-size: 5.3vw">Une très grande pensée pour ceux qui</a>
+            <a class="annonce" style="font-size: 5.3vw;">seront toujours dans nos coeurs.</a>
 
 
 
         </div>
-        <a href="#saveTheDate"> <img src="/img/flecheBas.png" style="width: 3vw; height: auto; margin-bottom: 5vw"
-                                     class="btnLink"></a>
+        <a href="#secondePartie"> <img src="/img/flecheBas.png" style="width: 3vw; height: auto; margin-bottom: 30vw"
+                                       class="btnLink"></a>
         <br>
         <br>
     </div>
 
+
+
+    <div id="secondePartie">
+        <div class="contenaireImage">
+            <img class="image" style="object-fit: cover" src="/img/tephiline.jpg">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="txtSecondePartie">
+
+            <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Tefilines</a>
+            <a class="txtSecondePartie" style="font-size: 4vw">C'est avec une grande reconnaissance</a>
+            <a class="txtSecondePartie" style="font-size: 4vw">envers Hashem. Que nous sommes Heureux</a>
+            <a class="txtSecondePartie" style="font-size: 4vw">de vous recevoir à la mise des Téfilines</a>
+            <a class="txtSecondePartie" style="margin-bottom: 4vw; font-size: 4vw">de notre fils Nathanaël</a>
+            <a class="txtSecondePartie" style="margin-bottom: 6vw;" >Paracha</a>
+            <div class="gpGauche" style="margin-bottom: 0vw"><a class="txtImportant">Vayakel</a>
+                <a class="txtImportant" style="font-family: 'torah sofer',sans-serif">lhq'v</a>
+            </div>
+            <a class="txtSecondePartie">le Jeudi 20 mars 2025</a>
+            <a class="txtSecondePartie">en la synagogue </a>
+            <a class="txtImportant" style="font-size: 10vw ;color: #afafaf">Beth Ephraïm</a>
+            <a class="txtSecondePartie">18 Rue André Grunig, </a>
+            <a class="txtSecondePartie">95200, Sarcelles</a>
+            <a class="txtSecondePartie"> à 8h00 précises</a>
+            <a class="txtSecondePartie" style="color: #afafaf">Un Brunch suivra l'office</a>
+            <br>
+            <a href="https://ul.waze.com/ul?place=ChIJ_RWf8vZp5kcR_YDWfgNDBKw&ll=49.00302390%2C2.37584770&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+               class="btnLink"><i class="fab fa-waze"> </i> Voir l'itinéraire
+
+            </a>
+
+
+        </div>
+        <br>
+    </div>
+
+
+    <div id="reponse">
+        <a class="txtImportant" style="font-size: 22vw; color: #afafaf">Réponse</a>
+
+        <form id="myForm" method="post">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+
+
+            <!-- Case pour la mise des tephilines juste après "Ne pourront pas assister" -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="tephilines" name="tephilines">
+                <label for="tephilines">Assisteront à la mise des tephilines</label>
+            </div>
+            <div id="tephilinesField" class="hidden">
+                <label for="nombrePersonnesTephilines">Nombre de personnes:</label>
+                <input type="number" id="nombrePersonnesTephilines" name="nombrePersonnesTephilines" min="1">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="reception" name="reception">
+                <label for="reception">Assisteront à la réception</label>
+            </div>
+            <div id="receptionField" class="hidden">
+                <label for="nombrePersonnesReception">Nombre de personnes à la réception:</label>
+                <input type="number" id="nombrePersonnesReception" name="nombrePersonnesReception" min="1">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
+                <label for="ne-pourront-assister">Ne pourront pas assister</label>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message pour Nathanaël:</label>
+                <textarea id="message" name="message" placeholder="Mazal tov Nathanaël !" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btnLink">
+                <i class="fas fa-paper-plane"></i> Envoyer
+            </button>
+        </form>
+        <br>
+        <a class="btnLink" id="addEventButton">Ajouter à l'agenda</a>
+
+    </div>
     <div id="saveTheDate">
         <a class="textSaveTheDate"><b>Save The Date</b></a>
         <a class="textSaveTheDate" style="font-size: 4.5vw; font-family:'DMSerif' , sans-serif "> 20 mars 2025</a>
@@ -114,87 +201,12 @@
             </div>
         </div>
     </div>
-
-
-    <div id="secondePartie">
-        <div class="contenaireImage">
-            <img class="image" style="object-fit: cover" src="/img/tephiline.jpg">
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="txtSecondePartie">
-
-            <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Tefilines</a>
-            <a class="txtSecondePartie" style="font-size: 4vw">C'est avec une grande reconnaissance</a>
-            <a class="txtSecondePartie" style="font-size: 4vw">envers Hashem. Que nous sommes Heureux</a>
-            <a class="txtSecondePartie" style="font-size: 4vw">de vous recevoir à la mise des Téfilines</a>
-            <a class="txtSecondePartie" style="margin-bottom: 4vw; font-size: 4vw">de notre fils</a>
-            <a class="txtSecondePartie" >Paracha</a>
-            <a class="txtImportant" style="font-size: 12vw ;color: #afafaf">Vayakel</a>
-
-
-
-            <a class="txtSecondePartie">le Jeudi 20 mars 2025</a>
-            <a class="txtSecondePartie">en la synagogue </a>
-            <a class="txtImportant" style="font-size: 10vw ;color: #afafaf">Beth Ephraïm</a>
-            <a class="txtSecondePartie">18 Rue André Grunig, 95200</a>
-            <a class="txtSecondePartie"> Sarcelles</a>
-            <a class="txtSecondePartie"> à 8h00 précise</a>
-            <a class="txtSecondePartie" style="color: #afafaf">Un Brunch suivra l'office</a>
-            <br>
-            <a href="https://ul.waze.com/ul?place=ChIJ_RWf8vZp5kcR_YDWfgNDBKw&ll=49.00302390%2C2.37584770&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-               class="btnLink"><i class="fab fa-waze"> </i> Voir l'itinéraire
-
-            </a>
-
-
-        </div>
-        <br>
-    </div>
-
-
-<div id="reponse">
-    <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Réponse</a>
-
-
-    <form id="myForm" method="post">
-        <div class="form-group">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
-        </div>
-        <div class="form-group">
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required>
-        </div>
-        <div class="checkbox-group">
-            <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
-            <label for="ne-pourront-assister">Ne pourront pas assister</label>
-        </div>
-
-        <!-- Case pour la mise des tephilines juste après "Ne pourront pas assister" -->
-        <div class="checkbox-group">
-            <input type="checkbox" id="tephilines" name="tephilines">
-            <label for="tephilines">Assisteront</label>
-        </div>
-        <div id="tephilinesField" class="hidden">
-            <label for="nombrePersonnesTephilines">Nombre de personnes:</label>
-            <input type="number" id="nombrePersonnesTephilines" name="nombrePersonnesTephilines" min="1">
-        </div>
-
-        <div class="form-group">
-            <label for="message">Message pour Nathanaël:</label>
-            <textarea id="message" name="message" placeholder="Mazal tov Nathanaël !" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btnLink">
-            <i class="fas fa-paper-plane"></i> Envoyer
-        </button>
-    </form>
-</div>
 </div>
 
     <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
     <script defer src="/js/sheet.js"></script>
+<script defer src="/js/agenda.js"></script>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
