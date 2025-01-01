@@ -272,6 +272,7 @@ img {
 
 #secondePartie {
   width: 100%;
+  background-image: url("/img/background-Kotel.jpg");
   background-color: #fffaf4;
   background-size: cover;
   background-position: center;
