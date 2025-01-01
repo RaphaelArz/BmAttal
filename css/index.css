@@ -273,8 +273,8 @@ img {
 #secondePartie {
   width: 100%;
   background-image: url("/img/background-Kotel.jpg");
+  background-size: 100% 100%; /* L'image s'étire pour remplir tout l'écran */
   background-color: #fffaf4;
-  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center; /* Centre horizontalement */
@@ -312,7 +312,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: #fffaf4;
-  background-image: url("/img/silverBackground.jpg");
+  background-image: url("/img/soireeBack.jpg");
 
   background-size: cover;
   background-position: center;
