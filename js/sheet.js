@@ -42,7 +42,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     formData.forEach((value, key) => data[key] = value);
 
     // Envoyer les données via fetch
-    fetch('https://script.google.com/macros/s/AKfycbyqTqEF12cahSVfxFtKsyDclTWJ6hSHuWbQt8U7YDB8katF_JoffYZjCFRN6Ala8ICjmg/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwFmoRz69w7sXmqkuFgSH0uYJ7J2Rx817A6ld-i_Esu6eSUtpEyIYm8GUHkPQq0yYMYlw/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
